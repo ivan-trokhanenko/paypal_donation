@@ -1,0 +1,24 @@
+paypal_donation.configure:
+  path: '/admin/config/services/paypal-donations'
+  defaults:
+    _form: '\Drupal\paypal_donation\Form\SettingsForm'
+    _title: 'PayPal Donation'
+  requirements:
+    _permission: 'administer paypal donations'
+
+paypal_donation.configure.ipn:
+  path: '/admin/config/services/paypal-donations/ipn'
+  defaults:
+    _form: '\Drupal\paypal_donation\Form\IPNSettingsForm'
+    _title: 'Instant Payment Notifications'
+  requirements:
+    _permission: 'administer paypal donations'
+
+paypal_donation.ipn:
+  path: '/paypal/payment/ipn'
+  defaults:
+    _controller: '\Drupal\paypal_donation\Controller\IPNController::listen'
+    _title: 'Instant Payment Notification'
+  methods: [POST]
+  requirements:
+    _access: 'TRUE'

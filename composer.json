@@ -1,0 +1,10 @@
+{
+    "name": "drupal/paypal_donation",
+    "type": "drupal-module",
+    "description": "Provides a block with PayPal donation form.",
+    "keywords": ["Drupal", "PayPal", "Donation"],
+    "minimum-stability": "dev",
+    "require": {
+        "paypal/sdk-core-php": "^3.4"
+    }
+}

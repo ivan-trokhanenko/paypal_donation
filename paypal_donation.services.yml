@@ -1,0 +1,6 @@
+services:
+  paypal_donation.ipn_route_subscriber:
+    class: Drupal\paypal_donation\EventSubscriber\IPNRouteSubscriber
+    arguments: ['@config.factory']
+    tags:
+      - { name: event_subscriber }

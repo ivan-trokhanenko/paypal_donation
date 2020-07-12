@@ -1,0 +1,17 @@
+<?php
+
+/**
+ * @file
+ * Module file for the PayPal Donation module.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function paypal_donation_theme() {
+  $theme['block__paypal_donation'] = [
+    'base hook' => 'block',
+  ];
+
+  return $theme;
+}

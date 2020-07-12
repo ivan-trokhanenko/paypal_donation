@@ -1,0 +1,27 @@
+mode: live
+receiver: ''
+locale_code: ''
+options_style: radios
+currency_code: USD
+currency_sign: $
+amount_label: 'Select an amount to support us'
+button: 'Donate now'
+variable: ''
+description: 'Please note: As we’ve just incorporated CoachingForCommunity we''re currently waiting to receive 501(c)3 status.  Therefore, right now your donation is not tax deductible. We appreciate your understanding and hope you will support us. Thank you!'
+options: '1000.00, 500.00, 250.00, 100.00, 50.00'
+custom: true
+custom_min: '0.01'
+custom_max: ''
+custom_label: Other
+recurring:
+  enabled: true
+  label: 'Make this a regular monthly donation'
+  unit: M
+  duration: '1'
+notify:
+  donor:
+    subject: 'Thank you for your donation at [site:name]'
+return_path: /node/396
+cancel_path: /node/396
+single:
+  enabled: true

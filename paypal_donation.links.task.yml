@@ -1,0 +1,8 @@
+paypal_donation.settings:
+  route_name: paypal_donation.configure
+  title: 'Settings'
+  base_route: paypal_donation.configure
+paypal_donation.ipn:
+  route_name: paypal_donation.configure.ipn
+  title: 'IPN'
+  base_route: paypal_donation.configure
